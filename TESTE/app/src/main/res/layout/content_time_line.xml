@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bpp_mobile_test.bpp_mobile_test.TimeLineActivity"
+    tools:showIn="@layout/activity_time_line"
+    android:background="#dcdcdc">
+
+
+    <RelativeLayout
+        android:layout_width="5px"
+        android:layout_height="match_parent"
+        android:background="#aeaeae"
+        android:layout_marginLeft="20.5dp"
+
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/timelineList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

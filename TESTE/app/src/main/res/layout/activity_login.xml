@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCC"
+    tools:context="com.bpp_mobile_test.bpp_mobile_test.login.LoginActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="bpp-mobile-test"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:background="#bababa"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="100dp"
+        android:paddingTop="20dp"
+        android:layout_marginRight="15dp" >
+
+
+        <RelativeLayout
+            android:id="@+id/layout_campos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/lytlpassword"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="11dp"
+                android:src="@drawable/ic_person_black_24dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_toRightOf="@+id/icon_login"
+        android:id="@+id/lytlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/emailEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:hint="Login" />
+    </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/icon_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/icon_login"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_https_black_24dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_toRightOf="@id/icon_pass"
+            android:layout_below="@+id/lytlogin"
+            android:id="@+id/lytlpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/passwordEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:inputType="textPassword"
+                android:hint="Senha" />
+        </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/layout_campos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <Button
+            android:backgroundTint="@color/botoes"
+            android:id="@+id/btn_entrar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Acessar"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btn_entrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:backgroundTint="#CCC"
+            android:text="Não tenho Cadastro"/>
+
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
